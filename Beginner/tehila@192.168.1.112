@@ -1,0 +1,27 @@
+import os
+import subprocess
+import deploy_aws
+
+
+def menu():
+    ip = input("Please enter the desired IP: ")
+    choose = input("Hello! this is your menu. \nPlease choose what you'd like to do: \n"
+                   "\n1. Manage AWS machine"
+                   "\n2. Configure basic installations and packages on my VM"
+                   "\n3. Install Jenkins master on my VM"
+                   "\n4. Install Nagios server"
+                   "\n5. Install Netperf tool"
+                   "\n6. Install my key on a remote machine"
+                   "\n"
+                   "\nEnter your choice: ")
+    if choose == "1":
+        deploy_aws.menu()
+    elif choose == "2":
+        command = 'bash /Users/tehilad/set_install.sh {}'.format(ip)
+        os.system(command)
+    elif choose == "3":
+        command = 'bash /Users/tehilad/install_jenkins.sh {}'.format(ip)
+        os.system(command)
+
+
+menu()

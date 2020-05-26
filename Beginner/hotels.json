@@ -1,0 +1,26 @@
+{
+  "hotels": [
+    {
+      "name": "patal",
+      "rooms": [
+        {
+          "base_cost": 100,
+          "people_count": 2,
+          "breakfast": "true",
+          "occupied_date": []
+        }
+      ]
+    },
+    {
+      "name": "isrotel",
+      "rooms": [
+        {
+          "base_cost": 200,
+          "people_count": 3,
+          "breakfast": "true",
+          "occupied_date": []
+        }
+      ]
+    }
+  ]
+}
